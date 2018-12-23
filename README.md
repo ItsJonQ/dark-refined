@@ -1,4 +1,4 @@
-# ✨ Dark Refined
+# 🔸 Dark Refined
 
 [![Version](https://vsmarketplacebadge.apphb.com/version/itsjonq.dark-refined.svg)](https://marketplace.visualstudio.com/items?itemName=itsjonq.dark-refined)
 
