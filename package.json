@@ -67,11 +67,6 @@
         "path": "./themes/refined-theme-matcha.json"
       },
       {
-        "label": "Refined (Mocha)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/refined-theme-mocha.json"
-      },
-      {
         "label": "Refined (Night Owl)",
         "uiTheme": "vs-dark",
         "path": "./themes/refined-theme-night-owl.json"

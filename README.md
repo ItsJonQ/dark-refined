@@ -4,6 +4,10 @@
 
 > A series of VSCode themes based on Dark+
 
+## Preview
+
+![Default](https://raw.githubusercontent.com/ItsJonQ/dark-refined/master/images/refined-default.jpg)
+
 ## Generate
 
 This is the magic sauce for Refined's themes!

@@ -234,7 +234,14 @@
     },
     {
       "name": "Strings",
-      "scope": ["string", "string.tag", "string.value", "string.regexp"],
+      "scope": [
+        "string",
+        "string.tag",
+        "string.value",
+        "string.regexp",
+
+        "markup.inline.raw"
+      ],
       "settings": {
         "foreground": "#addb7b"
       }
