@@ -202,7 +202,7 @@
     "gitDecoration.modifiedResourceForeground": "#d2d6d1",
     "gitDecoration.deletedResourceForeground": "#EF535090",
     "gitDecoration.untrackedResourceForeground": "#addb7bff",
-    "gitDecoration.ignoredResourceForeground": "#395a75",
+    "gitDecoration.ignoredResourceForeground": "#d2d6d140",
     "gitDecoration.conflictingResourceForeground": "#ffeb95cc",
     "source.elm": "#7d8879",
     "string.quoted.single.js": "#ffffff",
