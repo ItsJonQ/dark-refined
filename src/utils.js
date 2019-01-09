@@ -2,7 +2,7 @@ const defaultColors = require("./colors/default");
 const { darken, lighten } = require("polished");
 
 const BACKGROUND_COLOR = "#1e222a";
-const TEXT_COLOR = "#737e83";
+const TEXT_COLOR = "#7d888d";
 const FALLBACK_COLOR = "#1e222a";
 
 /**

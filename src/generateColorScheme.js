@@ -1,11 +1,5 @@
-const { darken, lighten } = require("polished");
 const defaultColors = require("./colors/refined");
-const {
-  isDark,
-  getButtonColors,
-  getShades,
-  getTerminalColors
-} = require("./utils");
+const { getButtonColors, getShades, getTerminalColors } = require("./utils");
 
 // Sensible defaults
 const defaultConfig = {
@@ -18,7 +12,7 @@ const defaultConfig = {
 const defaultShades = {
   // Background + text are the key co'ors
   background: "#1e222a",
-  text: "#737e83"
+  text: "#7d888d"
 };
 
 /**
