@@ -4,7 +4,7 @@ const config = {
 };
 
 const shades = {
-  background: "#1e222a",
+  background: "#1e1e1e",
   text: "#737e83"
 };
 
