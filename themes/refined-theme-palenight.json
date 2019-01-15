@@ -110,7 +110,7 @@
     "editorWarning.foreground": "#b39554",
     "editorWarning.border": null,
     "editorGutter.background": "#292d3e",
-    "editorGutter.modifiedBackground": "#ecc48d",
+    "editorGutter.modifiedBackground": "#e6d2aa",
     "editorGutter.addedBackground": "#addb7b",
     "editorGutter.deletedBackground": "#EF5350",
     "diffEditor.insertedTextBackground": "#F78C6C23",
@@ -203,7 +203,7 @@
     "gitDecoration.deletedResourceForeground": "#EF535090",
     "gitDecoration.untrackedResourceForeground": "#addb7bff",
     "gitDecoration.ignoredResourceForeground": "#d7d7d840",
-    "gitDecoration.conflictingResourceForeground": "#ffeb95cc",
+    "gitDecoration.conflictingResourceForeground": "#e6d2aacc",
     "source.elm": "#848287",
     "string.quoted.single.js": "#ffffff",
     "meta.objectliteral.js": "#82AAFF"
@@ -229,7 +229,7 @@
         "support.constant.handlebars"
       ],
       "settings": {
-        "foreground": "#ffcb8b"
+        "foreground": "#e6d2aa"
       }
     },
     {
