@@ -1,11 +1,11 @@
 const config = {
-  name: "Refined (Charcoal)",
+  name: "Refined (Mocha)",
   type: "dark"
 };
 
 const shades = {
-  background: "#101010",
-  text: "#7d7d7d"
+  background: "#2c251e",
+  text: "#877e79"
 };
 
 module.exports = {

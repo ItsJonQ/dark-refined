@@ -45,7 +45,11 @@ function getListFocusBackground(color = FALLBACK_COLOR) {
 }
 
 function getButtonColors(
-  props = { background: BACKGROUND_COLOR, colors: defaultColors, isMono: false }
+  props = {
+    background: BACKGROUND_COLOR,
+    colors: defaultColors,
+    isMono: false
+  }
 ) {
   const { background, colors, isMono } = props;
 
@@ -100,6 +104,7 @@ function getShades(
     // Backgrounds
     background,
     dark: darken(0.045, background),
+    slightlyDark: darken(0.025, background),
     light: lighten(0.07, background),
     lighter: lighten(0.14, background),
     // Text
