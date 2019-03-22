@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs'
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  styleUrls: ['./search.component.css'],
 })
 export class SearchComponent implements OnInit, OnDestroy {
   query: string
@@ -15,7 +15,7 @@ export class SearchComponent implements OnInit, OnDestroy {
 
   constructor(
     private searchService: SearchService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
   ) {}
 
   ngOnInit() {
@@ -32,7 +32,7 @@ export class SearchComponent implements OnInit, OnDestroy {
       (data: any) => {
         this.searchResults = data
       },
-      error => console.log(error)
+      error => console.log(error),
     )
   }
 
@@ -44,20 +44,21 @@ export class SearchComponent implements OnInit, OnDestroy {
 }
 
 async function asyncCall() {
-  var result = await resolveAfter2Seconds();
+  var result = await resolveAfter2Seconds()
 }
 
-for (let i=0; i <10; i++) {
-  continue;
+for (let i = 0; i < 10; i++) {
+  continue
 }
 
-if (true) {}
+if (true) {
+}
 
 while (true) {}
 
-switch(2) {
+switch (2) {
   case 2:
-    break;
+    break
   default:
-    break;
+    break
 }

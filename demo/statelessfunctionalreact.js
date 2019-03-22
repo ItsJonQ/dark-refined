@@ -3,7 +3,11 @@ const ListItem = props => <li className="list-item">{props.item.name}</li>
 
 // I use this when my component has no logic outside JSX
 const List = ({ items }) => (
-  <ul className="list">{items.map(item => <ListItem item={item} />)}</ul>
+  <ul className="list">
+    {items.map(item => (
+      <ListItem item={item} />
+    ))}
+  </ul>
 )
 
 // I use this when the component needs logic outside JSX.
@@ -27,5 +31,5 @@ function Page(props, context) {
 }
 // propTypes and contextTypes are supported
 Page.propTypes = {
-  rawItems: React.PropTypes.array.isRequired
+  rawItems: React.PropTypes.array.isRequired,
 }

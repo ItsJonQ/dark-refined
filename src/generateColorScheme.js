@@ -1,19 +1,19 @@
-const defaultColors = require("./colors/refined");
-const { getButtonColors, getShades, getTerminalColors } = require("./utils");
+const defaultColors = require('./colors/refined')
+const { getButtonColors, getShades, getTerminalColors } = require('./utils')
 
 // Sensible defaults
 const defaultConfig = {
-  name: "Refined",
-  type: "Dark",
-  fontStyle: "",
-  isMono: false
-};
+  name: 'Refined',
+  type: 'Dark',
+  fontStyle: '',
+  isMono: false,
+}
 
 const defaultShades = {
   // Background + text are the key co'ors
-  background: "#1e222a",
-  text: "#7d888d"
-};
+  background: '#1e222a',
+  text: '#7d888d',
+}
 
 /**
  * Generates the color map used by our template.json file.
@@ -28,17 +28,17 @@ function generateColorScheme(
   options = {
     config: defaultConfig,
     shades: defaultShades,
-    colors: defaultColors
-  }
+    colors: defaultColors,
+  },
 ) {
-  const config = { ...defaultConfig, ...options.config };
-  const shades = { ...defaultShades, ...options.shades };
-  const colors = { ...defaultColors, ...options.colors };
+  const config = { ...defaultConfig, ...options.config }
+  const shades = { ...defaultShades, ...options.shades }
+  const colors = { ...defaultColors, ...options.colors }
 
-  const { background } = shades;
-  const isMono = config.isMono;
+  const { background } = shades
+  const isMono = config.isMono
 
-  const shadeColors = getShades({ config, shades });
+  const shadeColors = getShades({ config, shades })
 
   const remappedShades = {
     // Background
@@ -52,6 +52,7 @@ function generateColorScheme(
     // List
     listInactiveSelectionBackground: shadeColors.light,
     listFocusBackground: shadeColors.listFocusBackground,
+    listHoverBackground: shadeColors.light,
 
     // Text
     textPrimary: shadeColors.text,
@@ -104,19 +105,19 @@ function generateColorScheme(
 
     // Widget
     editorWidgetBackground: shadeColors.light,
-    editorWidgetBorder: shadeColors.dark
-  };
+    editorWidgetBorder: shadeColors.dark,
+  }
 
-  const buttonColors = getButtonColors({ background, colors, isMono });
-  const terminalColors = getTerminalColors({ background });
+  const buttonColors = getButtonColors({ background, colors, isMono })
+  const terminalColors = getTerminalColors({ background })
 
   return {
     ...config,
     ...remappedShades,
     ...colors,
     ...terminalColors,
-    ...buttonColors
-  };
+    ...buttonColors,
+  }
 }
 
-module.exports = generateColorScheme;
+module.exports = generateColorScheme

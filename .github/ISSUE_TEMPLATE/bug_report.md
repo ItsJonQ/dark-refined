@@ -1,7 +1,6 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-
 ---
 
 **Please make sure you're using the latest version of the plugin before submitting an issue**

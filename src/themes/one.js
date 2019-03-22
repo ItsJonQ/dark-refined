@@ -1,14 +1,14 @@
 const config = {
-  name: "Refined (One)",
-  type: "dark"
-};
+  name: 'Refined (One)',
+  type: 'dark',
+}
 
 const shades = {
-  background: "#282c34",
-  text: "#7d888d"
-};
+  background: '#282c34',
+  text: '#7d888d',
+}
 
 module.exports = {
   config,
-  shades
-};
+  shades,
+}

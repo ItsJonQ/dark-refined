@@ -46,7 +46,7 @@
     "list.focusBackground": "<%= listFocusBackground %>",
     "list.focusForeground": "<%= brightWhite %>",
     "list.highlightForeground": "<%= brightWhite %>",
-    "list.hoverBackground": "<%= backgroundPrimary %>",
+    "list.hoverBackground": "<%= listHoverBackground %>",
     "list.hoverForeground": "<%= brightWhite %>",
     "list.inactiveSelectionBackground": "<%= listInactiveSelectionBackground %>",
     "list.inactiveSelectionForeground": "<%= textPrimary %>",

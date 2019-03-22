@@ -36,22 +36,22 @@ A theme only really requires a single shade, which makes up the background.
 
 ```js
 // themes/palenight.js
-const colors = require("../colors/default");
+const colors = require('../colors/default')
 
 const config = {
-  name: "Dark (Palenight)",
-  type: "dark"
-};
+  name: 'Dark (Palenight)',
+  type: 'dark',
+}
 
 const shades = {
-  background: "#292d3e"
-};
+  background: '#292d3e',
+}
 
 module.exports = {
   config,
   shades,
-  colors
-};
+  colors,
+}
 ```
 
 The theme is generated into `/themes/`, with it's details added to `package.json` - ready for publishing!

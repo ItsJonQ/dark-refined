@@ -18,11 +18,11 @@ class Sale {
 
   static quebec(price) {
     // this is a comment
-    return price + price * 7.5 / 100
+    return price + (price * 7.5) / 100
   }
 
   static fedtax(price) {
-    return price + price * 5 / 100
+    return price + (price * 5) / 100
   }
 }
 
@@ -36,20 +36,21 @@ getPrice()
 //deeply nested
 
 async function asyncCall() {
-  var result = await resolveAfter2Seconds();
+  var result = await resolveAfter2Seconds()
 }
 
-for (let i=0; i <10; i++) {
-  continue;
+for (let i = 0; i < 10; i++) {
+  continue
 }
 
-if (true) {}
+if (true) {
+}
 
 while (true) {}
 
-switch(2) {
+switch (2) {
   case 2:
-    break;
+    break
   default:
-    break;
+    break
 }

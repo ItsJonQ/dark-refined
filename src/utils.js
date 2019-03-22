@@ -1,18 +1,18 @@
-const defaultColors = require("./colors/default");
-const { darken, lighten } = require("polished");
+const defaultColors = require('./colors/default')
+const { darken, lighten } = require('polished')
 
-const BACKGROUND_COLOR = "#1e222a";
-const TEXT_COLOR = "#7d888d";
-const FALLBACK_COLOR = "#1e222a";
+const BACKGROUND_COLOR = '#1e222a'
+const TEXT_COLOR = '#7d888d'
+const FALLBACK_COLOR = '#1e222a'
 
 /**
  * Checks to see if the theme is dark.
  * @param {Object} config The theme config.
  * @returns {boolean} The result.
  */
-function isDark(config = { type: "dark" }) {
-  const { type } = config;
-  return type.toLowerCase() === "dark";
+function isDark(config = { type: 'dark' }) {
+  const { type } = config
+  return type.toLowerCase() === 'dark'
 }
 
 /**
@@ -21,7 +21,7 @@ function isDark(config = { type: "dark" }) {
  * @returns {boolean} The result.
  */
 function isTooDark(color = FALLBACK_COLOR) {
-  return darken(0.1, color) === "#000";
+  return darken(0.1, color) === '#000'
 }
 
 /**
@@ -30,75 +30,75 @@ function isTooDark(color = FALLBACK_COLOR) {
  * @returns {string} The generated background color.
  */
 function getSelectionBackgroundColor(color = FALLBACK_COLOR) {
-  const lightenValue = isTooDark(color) ? 0.12 : 0.07;
+  const lightenValue = isTooDark(color) ? 0.12 : 0.07
 
-  return lighten(lightenValue, color);
+  return lighten(lightenValue, color)
 }
 
 function getLineHighlightBackground(color = FALLBACK_COLOR) {
   // Note: We'll adjust this for light themes.
-  return isTooDark(color) ? "#ffffff08" : "#ffffff07";
+  return isTooDark(color) ? '#ffffff08' : '#ffffff07'
 }
 
 function getListFocusBackground(color = FALLBACK_COLOR) {
-  return isTooDark(color) ? "#ffffff11" : "#0003";
+  return isTooDark(color) ? '#ffffff11' : '#0003'
 }
 
 function getButtonColors(
   props = {
     background: BACKGROUND_COLOR,
     colors: defaultColors,
-    isMono: false
-  }
+    isMono: false,
+  },
 ) {
-  const { background, colors, isMono } = props;
+  const { background, colors, isMono } = props
 
   const buttonBackground = isMono
     ? lighten(0.15, background)
-    : `${colors.magenta}cc`;
-  const buttonText = `${colors.brightWhite}cc`;
+    : `${colors.magenta}cc`
+  const buttonText = `${colors.brightWhite}cc`
   const buttonHoverBackground = isMono
     ? lighten(0.1, background)
-    : colors.magenta;
+    : colors.magenta
 
   return {
     buttonBackground,
     buttonText,
-    buttonHoverBackground
-  };
+    buttonHoverBackground,
+  }
 }
 
 function getTerminalColors({ background } = { background: BACKGROUND_COLOR }) {
   // For now, these values are hard coded.
   return {
-    termWhite: "#ffffff",
+    termWhite: '#ffffff',
     termBlack: background,
-    termBlue: "#82AAFF",
-    termCyan: "#21c7a8",
-    termGreen: "#22da6e",
-    termMagenta: "#c792ea",
-    termRed: "#EF5350",
-    termYellow: "#ecc48d",
-    termBrightWhite: "#ffffff",
-    termBrightBlack: "#575656",
-    termBrightBlue: "#82AAFF",
-    termBrightCyan: "#7fdbca",
-    termBrightGreen: "#22da6e",
-    termBrightMagenta: "#c792ea",
-    termBrightRed: "#EF5350",
-    termBrightYellow: "#ffeb95"
-  };
+    termBlue: '#82AAFF',
+    termCyan: '#21c7a8',
+    termGreen: '#22da6e',
+    termMagenta: '#c792ea',
+    termRed: '#EF5350',
+    termYellow: '#ecc48d',
+    termBrightWhite: '#ffffff',
+    termBrightBlack: '#575656',
+    termBrightBlue: '#82AAFF',
+    termBrightCyan: '#7fdbca',
+    termBrightGreen: '#22da6e',
+    termBrightMagenta: '#c792ea',
+    termBrightRed: '#EF5350',
+    termBrightYellow: '#ffeb95',
+  }
 }
 
 function getShades(
   props = {
-    config: { type: "dark" },
-    shades: { background: BACKGROUND_COLOR, text: TEXT_COLOR }
-  }
+    config: { type: 'dark' },
+    shades: { background: BACKGROUND_COLOR, text: TEXT_COLOR },
+  },
 ) {
-  const { config, shades } = props;
-  const { background, text } = shades;
-  const borderColor = isDark(config) ? "#ffffff" : "#000000";
+  const { config, shades } = props
+  const { background, text } = shades
+  const borderColor = isDark(config) ? '#ffffff' : '#000000'
 
   return {
     // Backgrounds
@@ -122,8 +122,8 @@ function getShades(
     selectionBackground: getSelectionBackgroundColor(background),
     highlightLineBackground: getLineHighlightBackground(background),
     listFocusBackground: getListFocusBackground(background),
-    ...config
-  };
+    ...config,
+  }
 }
 
 module.exports = {
@@ -134,5 +134,5 @@ module.exports = {
   getLineHighlightBackground,
   getListFocusBackground,
   isTooDark,
-  isDark
-};
+  isDark,
+}
